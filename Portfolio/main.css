@@ -3,28 +3,39 @@
     animation-fill-mode: forwards;
 
 }
+main{
+    width: 100vw;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   height:100%;
+}
 
 #block-1{
     height: calc(100vh - 70px);
+    width: 100vw;
     padding-top: 70px;
-    padding-left: 0%;
     background: var(--color-gray-900);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #block-1 img{
-    width: min(70vw,400px);
+    max-width: fit-content;
     animation: 0.5s expand-image ease, 1s round-image 0s ease, 1s expand-border 0.50s ease;
     animation-fill-mode: forwards;
 }
+
 @keyframes expand-border {
     from {
         border: 0px #4c84ad solid;
     }
     to {
-        border: 50px #0d314a solid;
+        border: min(10vh, 10vw) #0d314a solid;
     }
   }
   @keyframes round-image {

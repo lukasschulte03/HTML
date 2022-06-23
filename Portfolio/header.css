@@ -2,9 +2,8 @@ html, body {
     font-family: var(--font-family);
     margin:0; 
     padding:0;
-    scroll-behavior: smooth;
     cursor: url('images/cursor.png'), auto;
-    min-width: 560px;
+    width: 100vw;
     }
 /*
 ::-webkit-scrollbar {
@@ -56,7 +55,6 @@ html, body {
         margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
-        width: 100% !important;
 
     }
     header #header-options{
@@ -68,7 +66,7 @@ html, body {
 
 header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     font-family: 'Archivo Black', sans-serif;
     font-weight: bolder;
     /*box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;*/
@@ -79,8 +77,34 @@ header{
     font-family: var(--font-family);
 }
 
-header h1{
+
+header #left-side-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 200px;
+
+}
+
+header #logo{
+    background: linear-gradient(to right,  rgb(229, 120, 200), rgb(150, 123, 240));
+    height: 25px;
+    width: 25px;
+    border-radius: 50% 50% 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #logo #logo-inner{
+    background-color: var(--color-gray-900);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+header h1{
+    width: auto;
     text-align: center;
     font-size: var(--header-font-size);
     font-weight: 500;
