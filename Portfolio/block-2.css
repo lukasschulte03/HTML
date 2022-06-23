@@ -1,0 +1,70 @@
+.block-2{
+    background: #0d314a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--primary-text-color);
+}
+
+
+.block-2 h2{
+    font-size: min(70px, 7vw);
+    text-align: center;
+}
+
+
+.block-2 .card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 1250px){
+    .block-2 .card-container{
+        flex-direction: column;
+    } 
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    max-width: 400px;
+    border-radius: 20px;
+    height: 100%;
+    margin: 1vw;
+    margin-bottom: 50px;
+}
+.card-1{
+    background-image: url("images/Coding-png.PNG");
+}
+.card-2{
+    background-image: url("images/art.PNG");
+    background-size: 450px;
+}
+.card-3{
+    background-image: url("images/wireframe.png");
+    background-size: 500px;
+
+}
+.card-4{
+    background-image: url("images/pcb.jpg");
+    background-size: 700px;
+}
+
+.card-contents{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    border-radius: 20px;
+}
+.card-contents h3{
+    font-size: 24px;
+    padding: 230px 30px 0px;
+    margin-top: 0px !important;
+}
+.card-contents p{
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 0px;
+}

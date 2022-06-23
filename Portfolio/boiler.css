@@ -1,0 +1,33 @@
+html, body {
+    font-family: var(--font-family);
+    margin:0; 
+    padding:0;
+    cursor: url('images/cursor.png'), auto;
+    width: 100vw;
+    scroll-behavior: smooth;
+    }
+/*
+::-webkit-scrollbar {
+      display: none;
+  }*/
+
+:root {
+    --primary-color: #171321;
+    --secondary-color: #0d314a;
+    --primary-text-color: #ffff;
+  }
+
+.go {
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+}
+main{
+    width: 100vw;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   height:100%;
+}

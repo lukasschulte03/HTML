@@ -1,49 +1,3 @@
-html, body {
-    font-family: var(--font-family);
-    margin:0; 
-    padding:0;
-    cursor: url('images/cursor.png'), auto;
-    width: 100vw;
-    }
-/*
-::-webkit-scrollbar {
-      display: none;
-  }*/
-
-:root {
-    --header-text-color: #f8fdff;
-    --header-font-size: 18px;
-    --big-text-color: #ffe742;
-    --color-pink-100: #fcf2f9;
-    --color-pink-500: #ff87d7;
-    --color-pink-700: #d459ab;
-    --color-pink-700-alpha: #d459ab22;
-    --color-pink-900: #961d6e;
-    --color-pink-900-alpha: #961d6e22;
-    --color-gray-000: #ffffff;
-    --color-gray-000-alpha: #ffffff22;
-    --color-gray-050: #f5f4fb;
-    --color-gray-100: #d4d0e0;
-    --color-gray-300: #b1acb9;
-    --color-gray-500: #7f7d87;
-    --color-gray-700: #403c4a;
-    --color-gray-800: #201d29;
-    --color-gray-900: #171321;
-    --color-gray-900-alpha: #17132122;
-    --color-teal-500: #87fffb;
-    --color-teal-500-alpha: #87fffb22;
-    --color-teal-700: #63ddd9;
-    --color-teal-900: #002827;
-    --color-yellow-500: #ffe742;
-    --color-yellow-500-alpha: #ffe74222;
-    --color-yellow-700: #ddc62c;
-    --color-blue-500: #04d2ff;
-    --color-blue-500-alpha: #04d2ff22;
-    --color-blue-700: #02a7cc;
-    --color-blue-900: #0d314a;
-    --font-family: jwf, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  }
-
 @media only screen and (max-width: 600px){
     header{
         display: flex;
@@ -57,7 +11,7 @@ html, body {
         margin-bottom: 0px;
 
     }
-    header #header-options{
+    header .header-options{
         width: 100% !important;
     }
 
@@ -68,25 +22,23 @@ header{
     position: fixed;
     width: 100vw;
     font-family: 'Archivo Black', sans-serif;
-    font-weight: bolder;
-    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;*/
-    background-color: var(--color-gray-900);
+    background-color: var(--primary-color);
     display:flex;
     justify-content: space-between;
     align-items:center;
-    font-family: var(--font-family);
+    color: var(--primary-text-color);
 }
 
 
-header #left-side-header{
+header .left-side-header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 200px;
+    width: 250px;
 
 }
 
-header #logo{
+header .logo{
     background: linear-gradient(to right,  rgb(229, 120, 200), rgb(150, 123, 240));
     height: 25px;
     width: 25px;
@@ -96,8 +48,8 @@ header #logo{
     align-items: center;
 }
 
-header #logo #logo-inner{
-    background-color: var(--color-gray-900);
+header .logo .logo-inner{
+    background-color: var(--primary-color);
     height: 15px;
     width: 15px;
     border-radius: 100%;
@@ -109,10 +61,9 @@ header h1{
     font-size: var(--header-font-size);
     font-weight: 500;
     letter-spacing: 1px;
-    color: var(--header-text-color);
 }
 
-header #header-options{
+header .header-options{
     display: flex;
     flex-direction: row;
     width: 500px;
@@ -123,11 +74,11 @@ header a{
     text-decoration: none;
     font-size: var(--header-font-size);
     letter-spacing: 1px;
-    color: var(--header-text-color);    
     font-weight: lighter;
+    color: var(--primary-text-color);
 }
 
-#gradient {
+.gradient {
     margin-top: 74px;
     position: absolute;
     bottom: -4px;
