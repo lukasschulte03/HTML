@@ -19,6 +19,7 @@
 }
 
 header{
+    z-index: 1000;
     position: fixed;
     width: 100vw;
     font-family: 'Archivo Black', sans-serif;
