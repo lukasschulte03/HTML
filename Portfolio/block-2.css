@@ -6,9 +6,11 @@
     flex-direction: column;
     font-family: 'Archivo Black', sans-serif;
     color: var(--primary-text-color);
+    min-height: 100vh;
 }
 
-
+/* *{outline: auto;}
+ */
 .block-2 h2{
     font-size: min(70px, 7vw);
     text-align: center;
@@ -22,7 +24,7 @@
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    min-height: 75vh;
+    min-height: 40vh;
 }
 
 @media only screen and (max-width: 1250px){
@@ -39,7 +41,8 @@
     max-width: 400px;
     border-radius: 20px;
     height: 100%;
-    margin: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: all .2s ease-in-out;
