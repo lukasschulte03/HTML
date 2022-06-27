@@ -1,10 +1,31 @@
+@font-face {
+    font-family: "Anurati-Regular";
+    src: url(Fonts/Anurati-Regular.otf);
+}
+@font-face {
+    font-family: "Blanka-Regular";
+    src: url(Fonts/Blanka-Regular.otf);
+}
+@font-face {
+    font-family: "Azonix";
+    src: url(Fonts/Azonix.otf);
+}
+
 html, body {
     font-family: var(--font-family);
     margin:0; 
     padding:0;
     cursor: url('images/cursor.png'), auto;
-    width: 100vw;
+    max-width: 100vw;
     scroll-behavior: smooth;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
     }
 /*
 ::-webkit-scrollbar {
@@ -15,6 +36,7 @@ html, body {
     --primary-color: #171321;
     --secondary-color: #0d314a;
     --primary-text-color: #ffff;
+
   }
 
 .go {
