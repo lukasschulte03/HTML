@@ -8,7 +8,7 @@ canvas.height = screen.height;
 const connectThreshold = 200;
 const maxBallSize = 5;
 const minBallSize = 3;
-const speedMax = 2;
+const speedMax = 1;
 const lineThickness = 2;
 const themeColor = "#0d314a";
 
@@ -76,7 +76,7 @@ class Particle{
         }
 
         if (this.x > canvas.width || this.x < 0){
-            this.x = -this.directionX;
+            this.directionX = -this.directionX;
         }
         if (this.y > canvas.height || this.y < 0){
             this.directionY = -this.directionY;

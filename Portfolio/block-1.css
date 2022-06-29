@@ -2,13 +2,18 @@
 .block-1{
     min-height: calc(100vh - 43.255px);
     width: 100vw;
-    padding-top: 70px;
     background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Archivo Black', sans-serif;
-
+    background-image: url("SVG/layered-waves-haikei2.svg");
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 100/1;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 1250px){
@@ -19,36 +24,44 @@
 
 .block-1 img{
     border-radius: 50%;
-    animation: 0.5s expand-image ease,/*  1s round-image 0s ease, */ 1s expand-border 0.50s ease;
+    animation: 0.5s expand-image ease, 1s opacity-shadow ease/*  1s round-image 0s ease, */ /* 1s expand-border 0.50s ease */;
     animation-fill-mode: forwards;
     z-index: 3;
 }
 
 @keyframes expand-border {
     from {
-        border: 0px #4c84ad solid;
+        border: 0px #21689b solid;
     }
     to {
-        border: min(7.5vh, 7.5vw) var(--secondary-color) solid;
+        border: min(5vh, 5vw) var(--secondary-color) solid;
     }
   }
-  @keyframes round-image {
+@keyframes round-image {
+from {
+    border-radius: 10%;
+}
+to {
+    border-radius: 50%;
+}
+}
+@keyframes opacity-shadow {
     from {
-        border-radius: 10%;
+        box-shadow: 0px 0px 0px 0px #3579aa00;
     }
     to {
-        border-radius: 50%;
+        box-shadow: 0px 0px min(10vh, 10vw) min(5vh, 5vw) #0D314A;
     }
-  }
-  @keyframes expand-image {
-    from {
-        width: 0px;
     }
-    to {
-        width: min(70vw, 60vh);
+@keyframes expand-image {
+from {
+    width: 0px;
+}
+to {
+    width: min(80vw, 60vh);
 
-    }
-  }
+}
+}
 
 
 
@@ -57,7 +70,6 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    margin-top: 27px;
     top: 0%; 
     left: 0%;
     width: 100vw; 
@@ -68,6 +80,6 @@
 
 @media only screen and (max-width: 1250px){
     #canvas1{
-        height: calc(100vh - 37px);
+        height: calc(100vh);
     } 
 }

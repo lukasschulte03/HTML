@@ -25,8 +25,18 @@ html, body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-
+                                  scroll-padding-top: 43.255px;
+    
     }
+
+    @media only screen and (max-width: 600px){
+        html, body{
+            scroll-padding-top: 79.991px;
+        }
+    
+    
+    }
+
 /*
 ::-webkit-scrollbar {
       display: none;

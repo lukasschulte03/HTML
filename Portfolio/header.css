@@ -84,17 +84,20 @@ header a{
     bottom: -4px;
     height: 4px;
     width: 100%;
-    background: linear-gradient(to right, rgb(131, 241, 128), rgb(242, 245, 84), rgb(229, 120, 200), rgb(125, 214, 239), rgb(150, 123, 240), rgb(237, 158, 80));
-    animation-name: fade-in-rgb;
-    animation-duration: 5s;
+    background: linear-gradient(to right, rgb(131, 241, 128), rgb(242, 245, 84), rgb(229, 120, 200), rgb(125, 214, 239), rgb(150, 123, 240), rgb(237, 158, 80), rgb(131, 241, 128), rgb(242, 245, 84), rgb(229, 120, 200), rgb(125, 214, 239), rgb(150, 123, 240), rgb(237, 158, 80), rgb(131, 241, 128));
+    animation: scroll-rgb 20s linear infinite;
+    background-size: 200% 100%;
+
 }
 
-@keyframes fade-in-rgb {
-    0%{
-        background: linear-gradient(to left, rgb(131, 241, 128), rgb(242, 245, 84), rgb(229, 120, 200), rgb(125, 214, 239), rgb(150, 123, 240), rgb(237, 158, 80));
+@keyframes scroll-rgb {
+    0% {
+        background-position: 0 0;
     }
-    100%{
-        background: linear-gradient(to right, rgb(131, 241, 128), rgb(242, 245, 84), rgb(229, 120, 200), rgb(125, 214, 239), rgb(150, 123, 240), rgb(237, 158, 80));
+
+    100% {
+        background-position: 200% 0;
     }
+
 }
 

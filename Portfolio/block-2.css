@@ -20,12 +20,15 @@
 
 .block-2 .card-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     max-width: 1920px;
     min-height: 40vh;
+    margin: 0 2.5vw;
 }
+
+
 
 @media only screen and (max-width: 1250px){
     .block-2 .card-container{
@@ -86,4 +89,17 @@
     padding: 0px 20px 20px 20px;
     margin-bottom: 0px;
     font-size: 14px;
+}
+
+.spacer{
+    position: absolute;
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url("SVG/layered-waves-haikei2.svg");
 }
