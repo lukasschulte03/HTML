@@ -48,13 +48,16 @@
     margin-right: 2vw;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-out;
     font-family: 'Archivo Black', sans-serif;
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
 }   
 
 @media(hover: hover){
     .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
         transform: scale(1.2);
+        /* filter: none; */
     }    
 }
 .card-1{

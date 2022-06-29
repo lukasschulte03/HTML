@@ -24,10 +24,19 @@
 
 .block-1 img{
     border-radius: 50%;
-    animation: 0.5s expand-image ease, 1s opacity-shadow ease/*  1s round-image 0s ease, */ /* 1s expand-border 0.50s ease */;
+    animation: 0.5s expand-image ease, 1s opacity-shadow ease, 3s pulse-border ease-in-out 1s infinite /*  1s round-image 0s ease, */ /* 1s expand-border 0.50s ease */;
     animation-fill-mode: forwards;
     z-index: 3;
 }
+
+@keyframes pulse-border {
+    0%, 100% {
+        box-shadow: 0px 0px min(10vh, 10vw) min(5vh, 5vw) #0D314A;
+    }
+    50% {
+        box-shadow: 0px 0px min(15vh, 15vw) min(10vh, 10vw) #0D314A;
+    }
+  }
 
 @keyframes expand-border {
     from {
