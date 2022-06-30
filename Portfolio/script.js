@@ -8,7 +8,7 @@ canvas.height = screen.height;
 const connectThreshold = 200;
 const maxBallSize = 5;
 const minBallSize = 3;
-const speedMax = 1;
+const speedMax = 0.4;
 const lineThickness = 2;
 const themeColor = "#0d314a";
 

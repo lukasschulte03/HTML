@@ -1,7 +1,110 @@
 .block-3{
-    height: 100vh;
+    padding: 0;
+    margin: 0;
     padding-top: 70px;
     background: var(--primary-color);
     font-family: 'Archivo Black', sans-serif;
+    position: relative;
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --br: 10px;
+    --explorer-bg: #272727;
+    --border-color:#333333;
+    --folder-color: rgb(80, 164, 236);
+    --explorer-border: max(4px, 0.35vw) var(--border-color) solid;
 
+}
+
+.explorer{
+    z-index: 20;
+    border-radius: var(--br);
+    border: var(--explorer-border);
+    background-color: var(--explorer-bg);
+    overflow: hidden;
+}
+.explorer h2{
+    width: 100%;
+    margin: 0;
+    padding: 0.25em 0;
+    font-size: max(2vw, 1em);
+    text-align: center;
+    border-bottom: var(--explorer-border);
+}
+
+.explorer-body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100% - 1em);
+    grid-template-columns: 1fr 1fr 1fr;
+    aspect-ratio: 2/1;
+}
+
+.explorer svg{
+    width: max(80px, 9vw);
+    height: max(80px, 9vw);
+    fill: var(--folder-color);
+    stroke: var(--border-color);
+    transition: all 0.1s ease-in-out;
+}
+@media(hover: hover){
+    .explorer svg:hover{
+        fill: rgba(45, 101, 150)
+    }  
+}
+
+.explorer svg:target{
+    fill: rgb(0, 0, 0)
+}  
+
+.svg-wrapper{
+    margin: max(30px, 3vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    .explorer-body{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+#project-1, #project-2, #project-3, #project-4, #project-5, #project-6{
+    display: none;
+}
+#project-1:target, #project-2:target, #project-3:target, #project-4:target, #project-5:target, #project-6:target{
+    display: inline;
+}
+
+.popup{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80vw;
+    height: 80vh;
+    background-color: var(--explorer-bg);
+    z-index: 1;
+    border-radius: var(--br);
+    border: var(--explorer-border);
+}
+
+.bg-art-2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: var(--secondary-color);
+    clip-path: polygon(0% 50%, 0% 100%, 100% 100%);
+    z-index: 0;
 }
