@@ -35,6 +35,10 @@
 }
 
 .explorer-body{
+    background-image: linear-gradient(red, yellow);
+    clip-path: url(#myClip);
+    height:300px;
+    width:100%;
     display: grid;
     margin: 0;
     padding: 0;
@@ -78,6 +82,7 @@
 
 #project-1, #project-2, #project-3, #project-4, #project-5, #project-6{
     display: none;
+    
 }
 #project-1:target, #project-2:target, #project-3:target, #project-4:target, #project-5:target, #project-6:target{
     display: inline;
