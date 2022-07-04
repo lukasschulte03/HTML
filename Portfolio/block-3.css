@@ -15,7 +15,7 @@
     --border-color:#333333;
     --folder-color: rgb(80, 164, 236);
     --explorer-border: max(4px, 0.35vw) var(--border-color) solid;
-
+    display: none;
 }
 
 .explorer{
