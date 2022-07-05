@@ -1,0 +1,2 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");:root{--text-color: black;--primary-color: white;--primary-accent-color: rgb(234, 234, 234);--secondary-color: #6c63ff;--secondary-accent-color: rgb(96, 56, 255);--third-color: rgb(92, 92, 92)}body{background:#ebebeb;margin:0;padding:0;font-family:'Poppins', sans-serif;color:var(--text-color)}html{margin:0;padding:0}*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+/*# sourceMappingURL=boiler.css.map */

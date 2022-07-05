@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html translate="no" lang="en">
   <head>
+    <title>Clean</title>
+    <meta name="google" content="notranslate" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clean</title>
-    <link href="navbar.css" rel="stylesheet" />
-    <link href="boiler.css" rel="stylesheet" />
-    <link href="contact.css" rel="stylesheet" />
-    <link href="footer.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/boiler.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/hero.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="notranslate">
+    <!--navbar-->
     <div class="navbar">
-      <div class="container">
+      <div class="navbar-container">
         <a href="#" class="logo">Lukas<span>Schulte</span></a>
         <ul>
           <li><a href="#">About</a></li>
@@ -21,6 +24,24 @@
         </ul>
       </div>
     </div>
+
+    <!--hero-->
+    <div class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <h1>Let's build something stunning!</h1>
+          <h2>
+            Let's take the next step in your career together, and build a
+            proffessional and stylish website to show off your work.
+          </h2>
+        </div>
+        <div class="hero-right">
+          <img src="images/modern.svg" alt="computer" />
+        </div>
+      </div>
+    </div>
+
+    <!--contact-->
     <div class="contact" id="contact">
       <div class="contact-container">
         <div class="contact-left">
@@ -37,20 +58,28 @@
           <input type="text" id="email" name="email" />
           <label for="message">Message</label>
           <textarea id="message" name="message" cols="30" rows="10"></textarea>
-          <div class="submit-wrapper">
-            <input type="submit" />
-            <img src="images/send.svg" alt="send icon" />
+          <div class="send-options">
+            <div class="submit-wrapper">
+              <input type="submit" />
+              <img src="images/send.svg" alt="send icon" />
+            </div>
+            <span class="or">or</span
+            ><a href="mailto:lukas007@live.se" class="email-address"
+              >Lukas007@live.se</a
+            >
           </div>
         </div>
       </div>
     </div>
+
+    <!--footer-->
     <footer>
       <span>Conditions of Use & Sale</span>
       <span>Privacy Notice</span>
       <span>Imprint</span>
       <span>Cookies Notice</span>
       <span>Interest-Based Ads Notice©</span>
-      <span>&copy 2003-2022, LukasSchulte.com, Inc. or its affiliates</span>
+      <span>&copy2003-2022, LukasSchulte.com</span>
     </footer>
   </body>
 </html>
