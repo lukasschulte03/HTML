@@ -1,0 +1,47 @@
+.navbar{
+    width: 100%;
+    background-color: white;
+}
+
+
+
+.container{
+    height: 100%;
+    max-width: 60em;
+    display: flex;
+    place-content: space-between;  
+    align-items: center;
+    padding: 0.75em 1em;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    
+}
+.logo span{
+    color: var(--secondary-color);
+}
+
+.container ul{
+    display: flex;
+    place-content: space-between;
+    width: 20em;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.container ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.container ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+

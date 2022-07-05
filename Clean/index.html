@@ -5,6 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clean</title>
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="boiler.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Lukas<span>Schulte</span></a>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <p>
+            Interested in what you see? Send me an email so we can get together
+            and make something awesome!
+          </p>
+        </div>
+        <div class="contact-right">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
+          <div class="submit-wrapper">
+            <input type="submit" />
+            <img src="images/send.svg" alt="send icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Conditions of Use & Sale</span>
+      <span>Privacy Notice</span>
+      <span>Imprint</span>
+      <span>Cookies Notice</span>
+      <span>Interest-Based Ads Notice©</span>
+      <span>&copy 2003-2022, LukasSchulte.com, Inc. or its affiliates</span>
+    </footer>
+  </body>
 </html>
