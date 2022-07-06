@@ -1,5 +1,5 @@
 .contact{
-    background-color: var(--primary-accent-color);
+    background-color: var(--primary-accent-color-1);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -16,6 +16,10 @@
         @media only screen and (max-width: 700px) {
             grid-template-columns: 1fr;
             gap: 2em;
+
+            .contact-left{
+                padding-right: 1em;
+            }
         
         }
     }
@@ -30,6 +34,7 @@
     h2{
         font-size: 2em;
         margin-bottom: 0.5em;
+        font-weight: var(--font-weight-1);
 
         &:before{
             content: '';
@@ -50,8 +55,8 @@
             left: -1em;
             top: -.75em;
             font-size: 14em;
-            font-weight: bold;
-            color: rgb(240, 240, 240);
+            font-weight: var(--font-weight-1);
+            color: var(--primary-accent-color-2);
             z-index: -1;
             transform: rotate(5deg);
         }
@@ -60,6 +65,20 @@
     p{
         font-size: 1em;
     }
+
+
+    .map-wrapper{
+        border-radius: 0.25em;
+        border: 0.25em solid var(--secondary-color);
+        margin-top: 4em;
+
+        iframe{
+            width: 100%;
+            height: 20em;
+            border-radius: 0.25em;
+        }
+    }
+    
 } 
     
 
@@ -73,7 +92,7 @@
 .contact-right{
     label{
         margin-bottom: 0.5em;
-        font-weight: bold;
+        font-weight: var(--font-weight-1);
     }
     textarea{
         resize: none;
@@ -99,7 +118,7 @@
         align-items: center;
 
         .submit-wrapper{
-            font-weight: bold;
+            font-weight: var(--font-weight-1);
             padding: 0.6em 1.1em 0.6em 1em;
             display: flex;
             place-content: space-between;
@@ -109,6 +128,7 @@
             border-radius: 0.25em;
             transition: all 0.2s ease-in-out;
             
+            
             &:hover{
                 background-color: var(--secondary-accent-color);
             }
@@ -117,6 +137,7 @@
                 height: 1.1em;
                 transition: transform 0.5s cubic-bezier(1, -4, 0, 1.01);
                 margin-left: 0.5em;
+                color: var(--text-color-alternate);
             }
             
             &:hover img{
@@ -124,9 +145,9 @@
             }
             
             input{
-                color: var(--primary-color);
+                color: var(--text-color-alternate);
                 font-size: 1em;
-                font-weight: bold;
+                font-weight: var(--font-weight-1);
                 background: none;
                 margin-bottom: 0;
                 border: none;
@@ -145,15 +166,16 @@
                 aspect-ratio: 1/1;
                 background-color: var(--primary-color);
                 border-radius: 50%;
-                top: -0.2em;
-                left: -0.5em;;
+                top: -0.24em;
+                left: -0.475em;;
                 z-index: -1;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             }
         }
 
         .email-address{
             font-size: 0.8em;
-            color: black;
+            color: var(--text-color);
 
             &:hover{
                 color: var(--secondary-color);

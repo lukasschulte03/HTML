@@ -7,6 +7,7 @@ footer{
     gap: 2em;
     color: var(--primary-color);
     padding: 1em 10em;
+    color: var(--text-color-alternate);
 
     @media only screen and (max-width: 860px) {
         grid-template-columns: 1fr 1fr;    
