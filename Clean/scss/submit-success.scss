@@ -1,11 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
 .container {
-    width: 40em;
-    height: 20em;
+    max-width: 40em;
+    height: fit-content;
     background-color: var(--primary-color);
-    margin: 3em auto;
+    margin: 3em 1em;
     border-radius: var(--br);
-    padding: 3em;
-    position: relative;
+    padding: 3em 3em 2em 3em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
 
@@ -27,7 +31,6 @@
         margin-top: 1.5em;
     }
     button{
-        display: absolute;
         cursor: pointer;
         color: var(--primary-color);
         font-size: 1em;
@@ -35,15 +38,20 @@
         border: none;
         background-color: var(--secondary-color);
         padding: 0.75em 1.25em;
+        margin-top: 2em;
         display: flex;
         align-items: center;
         border-radius: var(--br);
         img{
             display: inline;
             margin-right: 0.75em;
+            transition: transform 0.5s cubic-bezier(1, -4, 0, 1.01);
+            
+        }
+        &:hover img{
+            transform: translate(-0.2em, 0);
         }
         float: right;
-        margin-top: 3em;
 
         &:hover{
             background-color: var(--secondary-accent-color);
