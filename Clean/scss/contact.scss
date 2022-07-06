@@ -90,6 +90,11 @@
 }
 
 .contact-right{
+
+    input[name="bot-field"]{
+        display: none;
+    }
+
     label{
         margin-bottom: 0.5em;
         font-weight: var(--font-weight-1);
