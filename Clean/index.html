@@ -160,24 +160,36 @@
             ></iframe>
           </div>
         </div>
-        <div class="contact-right">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" cols="30" rows="10"></textarea>
-          <div class="send-options">
-            <div class="submit-wrapper">
-              <input type="submit" />
-              <img src="images/send.svg" alt="send icon" />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+        >
+          <div class="contact-right">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="send-options">
+              <div class="submit-wrapper">
+                <input type="submit" />
+                <img src="images/send.svg" alt="send icon" />
+              </div>
+              <span class="or">or</span
+              ><a href="mailto:lukas007@live.se" class="email-address"
+                >Lukas007@live.se</a
+              >
             </div>
-            <span class="or">or</span
-            ><a href="mailto:lukas007@live.se" class="email-address"
-              >Lukas007@live.se</a
-            >
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
