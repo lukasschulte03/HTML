@@ -112,7 +112,8 @@
                     width: 100%;
                     padding: 1em 2em;
                     &:hover{
-                        backdrop-filter: brightness(130%);
+                        -webkit-backdrop-filter: brightness(130%);
+                                backdrop-filter: brightness(130%);
                     }
                     a{
                         font-size: 2em;

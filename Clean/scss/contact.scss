@@ -128,6 +128,8 @@
             display: flex;
             place-content: space-between;
             align-items: center;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content; 
             background-color: var(--secondary-color);
             border-radius: var(--br);

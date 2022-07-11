@@ -71,6 +71,8 @@
                 font-size: 1.75em;
                 color: var(--primary-accent-color-3);
                 min-height: 1.5em;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
                 width: fit-content;
                 display: inline;
                 margin-right: 5px;
@@ -92,7 +94,27 @@
                     right: -0.2em;
                     bottom: 0.2em;
                     border-radius: 1000em;
-                    animation: cursorBlink 1s step-end infinite;
+                    -webkit-animation: cursorBlink 1s step-end infinite;
+                            animation: cursorBlink 1s step-end infinite;
+                }
+
+                @-webkit-keyframes cursorBlink {
+                    0%{
+                        opacity: 1;
+                    }
+                    30%{
+                        opacity: 1;
+                    }
+                    50%{
+                        opacity: 0;
+                    }
+                    80%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                    
                 }
 
                 @keyframes cursorBlink {
@@ -163,6 +185,8 @@
         }
 
         .see-more-container{
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
             position: absolute;
             margin: 0 auto;
