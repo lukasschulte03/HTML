@@ -2,7 +2,7 @@
     background-color: var(--primary-color);
     width: 100%;
     display: grid;
-    place-items: center;
+    justify-content: center;
     overflow: hidden;
     @media only screen and (max-height: 850px) {
         min-height: 100vh;            
@@ -22,7 +22,7 @@
         place-items: center;
         gap: 3em;
 
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 600px) {
             grid-template-columns: 1fr;
             grid-auto-flow:dense;
             gap: 0;
@@ -94,8 +94,8 @@
                     right: -0.2em;
                     bottom: 0.2em;
                     border-radius: 1000em;
-                    -webkit-animation: cursorBlink 1s step-end infinite;
-                            animation: cursorBlink 1s step-end infinite;
+                    -webkit-animation: cursorBlink 1s linear infinite;
+                            animation: cursorBlink 1s linear infinite;
                 }
 
                 @-webkit-keyframes cursorBlink {
