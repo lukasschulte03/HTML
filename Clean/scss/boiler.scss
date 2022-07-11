@@ -9,6 +9,12 @@
     --primary-accent-color-3: #bebebe;    
     --secondary-color: #6c63ff;
     --secondary-accent-color: rgb(96, 56, 255);
+
+    --secondary-color: #f67228;
+    --secondary-accent-color: #fba879;
+
+    --secondary-color: #467061;
+    --secondary-accent-color: #56937d;
     --third-color: rgb(92, 92, 92);
 
     --font-weight-1: 700;
@@ -32,10 +38,13 @@
 }
 
 body{
-    background: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-    font-weight: var(--font-weight-2);
+  background: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  font-weight: var(--font-weight-2);
+  /* & > :not(marquee){
+      transition: all 1s linear;
+  } */
 } 
 
 

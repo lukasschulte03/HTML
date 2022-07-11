@@ -118,7 +118,7 @@
         right: 0;
         z-index: -1;
 
-        --element-color: #837DFF;
+        --element-color: var(--secondary-accent-color);
         font-size: 0.95rem;
 
         & > * > svg{

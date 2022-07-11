@@ -8,7 +8,7 @@ let isEnd = false
 
 function loop () {
   isEnd = false
-  textDisplay.innerHTML = currentPhrase.join('')
+  textDisplay.innerHTML = currentPhrase.join('|')
 
   if (i < phrases.length) {
 
