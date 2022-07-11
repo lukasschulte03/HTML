@@ -1,17 +1,31 @@
 .about{
     background-color: var(--secondary-color);
 
-    --border-radius: 1em;
     --spacer: 0.25fr;
     position: relative;
     overflow: hidden;
     z-index: 1;
 
     .about-container{
+
+        & > *{
+            transition: transform 0.15s ease-out;
+        }
+
+        @media(hover:hover){
+            .text-box:hover{
+                transform: scale(1.1);
+                +.image{
+                    transform: scale(1.1);  
+                }  
+            }
+        }
+
+
         position: relative;
-        max-width: 45em;
+        max-width: 62em;
         margin: 0 auto;
-        padding: 7em 1em;
+        padding: 7em 2em;
         display: grid;
         grid-template-columns: 1fr 1fr 0fr;
         grid-auto-flow: dense;
@@ -19,9 +33,7 @@
         row-gap: 7em; 
         color: var(--primary-color);
 
-        @media only screen and (max-width: 525px) {
-            margin: 0 2rem;
-            
+        @media only screen and (max-width: 525px) {            
             grid-template-columns: 1fr !important;
             row-gap: 0; 
             grid-auto-rows: 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer) 1fr 1fr var(--spacer);
@@ -40,7 +52,15 @@
 
         .text-box{
 
-            backdrop-filter: blur(1rem);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);        
+        
+        
+            padding: 2em;
+
             h2{
                 font-weight: bold;
                 font-size: 1.5rem;
@@ -50,38 +70,40 @@
                 font-size: 1em;
             }
 
-            background-color: rgba(96, 56, 255, 0.3);
-            padding: 2em;
 
-            @media only screen and (max-width: 525px) {
+            @media only screen and (max-width: 525px) { 
             
-                border-radius: var(--border-radius) var(--border-radius) 0 0;
+                border-radius: var(--br) var(--br) 0 0;
                 height: 100%;
             }
+
+            
         }
 
         .image{
             height: 100%;
             width: 100%;
             @media only screen and (max-width: 525px) {
-                border-radius: 0 0 var(--border-radius) var(--border-radius);
+                border-radius: 0 0 var(--br) var(--br);
             }
         }
 
 
         .left{
+            transform-origin: right;
             @media only screen and (min-width: 525px) {
                 grid-column-start: 1;
                 grid-column-end: 1;
-                border-radius: var(--border-radius) 0 0 var(--border-radius);
+                border-radius: var(--br) 0 0 var(--br);
             }
         }
         .right{
+            transform-origin: left;
             @media only screen and (min-width: 525px) {
                 grid-column-start: 2;
                 grid-column-end: 2;
                 text-align: right;
-                border-radius: 0 var(--border-radius) var(--border-radius) 0;
+                border-radius: 0 var(--br) var(--br) 0;
             }
         }
     }
@@ -94,102 +116,96 @@
         bottom: 0;
         left: 0;
         right: 0;
-        outline: auto;
         z-index: -1;
 
-        --element-color: rgb(167, 162, 255);
-        font-size: 0.9rem;
+        --element-color: #837DFF;
+        font-size: 0.95rem;
 
-        & > *{
-            background-color: var(--element-color);
+        & > * > svg{
+            fill: var(--element-color);
+        }
+        & > * {
             position: absolute;
         }
 
-        .circle-1{
-            border-radius: 1000rem;
-            width: 50em;
-            height: 50em;
-            right: 0;
-            top: -29rem;
-        }
-        .circle-2{
-            border-radius: 1000rem;
-            width: 15em;
-            height: 15em;
-            left: 10%;
-            bottom: 50%;
-        }
-        .circle-3{
-            border-radius: 1000rem;
-            width: 30em;
-            height: 30em;
-            right: -8rem;
-            bottom: -8rem;
-        }
-        .square-1{
-            width: 12em;
-            height: 12em;
-            left: 38%;
-            bottom: 38%;
-            transform: rotate(35deg);
-        }
-        .square-2{
-            width: 23em;
-            height: 23em;
-            top: 17%;
-            left: -12rem;
-            transform: rotate(-65deg);
-            @media only screen and (max-width: 550px) {
+        .blob-1{
+            @media only screen and (max-width: 1150px) {
                 display: none;
             }
-        }
-        .square-3{
-            width: 15em;
-            height: 15em;
-            bottom: 10%;
+
             left: 15%;
-            transform: rotate(-35deg);
-        }
-        .semi-circle-1{
-            width: 35em;
-            height: 35em;
-            border-radius: 2rem;
-            bottom: 20%;
-            right: -5%;
-            transform: rotate(-35deg);
-            background-color: rgba($color: #000000, $alpha: 0);
+            top: -10rem;
             svg{
-                width: 100%;
-                height: 100%;
-                fill: var(--element-color);
+                width: 35em;
+                height: 35em;
             }
         }
-        .semi-circle-2{
-            width: 23em;
-            height: 23em;
-            right: 17%;
-            top: 22%;
-            transform: rotate(-85deg);
-            background-color: rgba($color: #000000, $alpha: 0);
+        .blob-2{
+            right: -3%;
+            top: 15%;
             svg{
-                width: 100%;
-                height: 100%;
-                fill: var(--element-color);
+                width: 50em;
+                height: 50em;
             }
         }
-        .semi-circle-3{
-            width: 15em;
-            height: 15em;
-            left: 20%;
-            top: 8%;
-            transform: rotate(-185deg);
-            background-color: rgba($color: #000000, $alpha: 0);
+        .blob-3{
+            @media only screen and (max-width: 1064px) and (min-width: 525px) {
+                display: none;
+            }
+            left: -20rem;
+            top: 25%;
             svg{
-                width: 100%;
-                height: 100%;
-                fill: var(--element-color);
+                width: 75em;
+                height: 75em;
             }
         }
+        .blob-4{
+            right: -20rem;
+            bottom: -30rem;
+            svg{
+                width: 75em;
+                height: 75em;
+            }
+        }
+        .blob-5{
+            @media only screen and (max-width: 1064px){
+                display: none;
+            }
+            left: 0;
+            bottom: -5rem;
+            svg{
+                width: 40em;
+                height: 40em;
+            }
+        }
+        .blob-6{
+            right: 5%;
+            bottom: 25%;
+            svg{
+                width: 30em;
+                height: 30em;
+            }
+        }
+        .blob-7{
+            @media only screen and (max-width: 955px){
+                display: none;
+            }
+            left: 0;
+            top: 15%;
+            svg{
+                width: 30em;
+                height: 30em;
+            }
+        }
+        .blob-8{
+            right: -10rem;
+            top: -25rem;
+            svg{
+                width: 50em;
+                height: 50em;
+            }
+        }
+        
 
     }
 }

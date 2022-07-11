@@ -5,7 +5,9 @@
     --text-color-alternate: rgb(255, 255, 255);
     --primary-color: white;
     --primary-accent-color-1: rgb(237, 237, 237);
-    --primary-accent-color-2: rgb(243, 243, 243);    --secondary-color: #6c63ff;
+    --primary-accent-color-2: rgb(243, 243, 243);    
+    --primary-accent-color-3: #bebebe;    
+    --secondary-color: #6c63ff;
     --secondary-accent-color: rgb(96, 56, 255);
     --third-color: rgb(92, 92, 92);
 
@@ -34,8 +36,23 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
     font-weight: var(--font-weight-2);
-    overflow-x: hidden;  
 } 
+
+
+/* @media (hover:hover) and (pointer: fine){
+  body::-webkit-scrollbar {
+    width: 15px;           
+  }
+  body::-webkit-scrollbar-track {
+    background: rgba(255, 166, 0, 0);     
+  }
+  body::-webkit-scrollbar-thumb {
+    height: 10px;
+    background-color: #b6b6b6;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+} */
 
 /* Box sizing rules */
 *,
@@ -68,6 +85,12 @@ body {
     scroll-behavior: smooth;
 
 }
+
+/* html{
+  scroll-padding-top: 52.8px;
+} */
+
+
 
 /* Set core body defaults */
 body {

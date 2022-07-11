@@ -1,0 +1,18 @@
+
+
+const typewriterText = document.getElementById("typewriter")
+
+
+typewriterText.innerHTML = seconds.toString() ;
+
+function deleteText(text){
+    len = text.length;
+    for (let i = 0; i < len; i++) {
+        str = str.slice(0, -1);
+    }
+}
+
+while (true){
+    setTimeout(deleteText, 100)
+
+}
