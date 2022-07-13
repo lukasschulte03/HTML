@@ -23,7 +23,7 @@
         place-items: center;
         gap: 3em;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 660px) {
             grid-template-columns: 1fr;
             grid-auto-flow:dense;
             gap: 0;
@@ -47,8 +47,6 @@
 /*                 margin-left: 0.4em;
  */             position: relative;
                 z-index: 1;
-                margin-top: 0.2em;
-                margin-bottom: 0.2em;
 
                 /* &:before{
                     content: '';
@@ -66,8 +64,9 @@
                 font-size: 1.1em;
                 font-weight: normal;
                 margin-top: 2em;
+                
             }
-
+            
             h3, span{
                 font-size: 1.75em;
                 color: var(--primary-accent-color-3);
@@ -75,10 +74,17 @@
                 width: fit-content;
                 display: inline;
                 margin-right: 5px;
+                
             }
-            .ima{
-                @media only screen and (max-width: 370px) {
-                    display: block;
+            .bent-arrow {
+                display: inline;
+                margin: 0 1em;
+                width: 2em;
+                height: 2em;
+                transform: rotate(180deg) translateX(-0.4em);
+                @media only screen and (max-width: 360px) {
+                    display: none;
+                    transform: rotate(90deg)
                 }
             }
             #typewriter{
@@ -133,11 +139,12 @@
                 margin-top: 2.5em;
                 a{
                     button{
+                        cursor: pointer;
                         padding: 0.5em 1em;
                         font-weight: bold;
                         color: var(--text-color-alternate);
                         background-color: var(--secondary-color);
-                        border: 0.1em var(--secondary-color) solid;
+                        border: 3px var(--secondary-color) solid;
                         border-radius: var(--br);
                         text-decoration: none;
                         transition: all 0.2s ease-in-out;
@@ -203,6 +210,9 @@
                 transform-origin: bottom left;
                 background-color: var(--secondary-color);
                 transform: translate(30%, -30%) rotate(28deg) scaleX(10) scaleY(20);
+                @media only screen and (min-width: 1890px) {
+                    transform: translate(30%, -30%) rotate(18deg) scaleX(10) scaleY(20);
+                }
                 
             }
         }

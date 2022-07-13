@@ -43,6 +43,10 @@ body{
   color: var(--text-color);
   font-weight: var(--font-weight-2);
   overflow-x: overlay;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   /* & > :not(marquee){
       transition: all 1s linear;
   } */
