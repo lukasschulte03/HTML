@@ -82,6 +82,8 @@
                 width: 2em;
                 height: 2em;
                 transform: rotate(180deg) translateX(-0.4em);
+                stroke: var(--primary-accent-color-3); 
+                fill: none;
                 @media only screen and (max-width: 360px) {
                     display: none;
                     transform: rotate(90deg)
