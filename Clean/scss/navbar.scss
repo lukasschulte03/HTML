@@ -17,7 +17,6 @@
         max-width: 60em;
         display: flex;
         place-content: space-between;  
-        align-items: center;
         padding: 0em 1em;
         margin: 0 auto;
 
@@ -47,6 +46,7 @@
             display: flex;
             align-items: center;
             height: 100%;
+            margin-left: auto;
 
               
             ul{
@@ -76,6 +76,7 @@
                         text-decoration: none; 
                         position: relative;
 
+                        @media(hover:hover){  
                             &:before{
                                 content: '';
                                 position: absolute;
@@ -88,7 +89,7 @@
                                 transition: transform 0.2s ease-in-out;
                                 transition-delay: 0.1s;
                             }
-
+    
                             &:hover:before{
                                 transform: scale(1, 1);
                                 transform-origin: left;
@@ -98,6 +99,9 @@
                             &:hover{
                                 color: var(--secondary-color);
                             }
+                        }
+                        
+
                         }
                     }  
 
@@ -205,7 +209,7 @@
     transition: all 0.3s ease-in-out;
     @media only screen and (min-width: 650px) {
                 position: absolute;
-            background-color: var(--primary-accent-color-1);
+            background-color: var(--primary-accent-color-2);  
             z-index: -1;
     } 
 }

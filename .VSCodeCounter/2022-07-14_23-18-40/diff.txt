@@ -1,0 +1,42 @@
+Date : 2022-07-14 23:18:40
+Directory : c:\Other Files\Git\HTML\Clean
+Total : 10 files,  182 codes, 18 comments, 25 blanks, all 225 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| SCSS       |          5 |         84 |         13 |         12 |        109 |
+| JavaScript |          2 |         52 |          1 |         11 |         64 |
+| HTML       |          1 |         41 |          3 |          1 |         45 |
+| XML        |          1 |          4 |          0 |          1 |          5 |
+| CSS        |          1 |          1 |          1 |          0 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                   |         10 |        182 |         18 |         25 |        225 |
+| css                                                 |          1 |          1 |          1 |          0 |          2 |
+| images                                              |          1 |          4 |          0 |          1 |          5 |
+| js                                                  |          2 |         52 |          1 |         11 |         64 |
+| scss                                                |          5 |         84 |         13 |         12 |        109 |
++-----------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                            | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Other Files\Git\HTML\Clean\css\projects.css      | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\bent-arrow.svg | XML        |          4 |          0 |          1 |          5 |
+| c:\Other Files\Git\HTML\Clean\index.html            | HTML       |         41 |          3 |          1 |         45 |
+| c:\Other Files\Git\HTML\Clean\js\nav-btn-active.js  | JavaScript |         32 |          1 |          8 |         41 |
+| c:\Other Files\Git\HTML\Clean\js\navbar-scroll.js   | JavaScript |         20 |          0 |          3 |         23 |
+| c:\Other Files\Git\HTML\Clean\scss\boiler.scss      | SCSS       |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\scss\contact.scss     | SCSS       |         18 |          0 |          1 |         19 |
+| c:\Other Files\Git\HTML\Clean\scss\hero.scss        | SCSS       |         10 |          0 |          2 |         12 |
+| c:\Other Files\Git\HTML\Clean\scss\navbar.scss      | SCSS       |         49 |         13 |          8 |         70 |
+| c:\Other Files\Git\HTML\Clean\scss\projects.scss    | SCSS       |          4 |          0 |          0 |          4 |
+| Total                                               |            |        182 |         18 |         25 |        225 |
++-----------------------------------------------------+------------+------------+------------+------------+------------+

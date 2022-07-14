@@ -1,0 +1,81 @@
+Date : 2022-07-14 23:18:40
+Directory : c:\Other Files\Git\HTML\Clean
+Total : 48 files,  1937 codes, 115 comments, 222 blanks, all 2274 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| SCSS       |          8 |        914 |         71 |        163 |      1,148 |
+| HTML       |          5 |        770 |         28 |         24 |        822 |
+| XML        |         16 |        132 |          1 |         13 |        146 |
+| JavaScript |          5 |        105 |          1 |         22 |        128 |
+| CSS        |         14 |         16 |         14 |          0 |         30 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         48 |      1,937 |        115 |        222 |      2,274 |
+| css                                                                          |          8 |         10 |          8 |          0 |         18 |
+| images                                                                       |         25 |        444 |         16 |         26 |        486 |
+| images\Lukas Schulte_files                                                   |         10 |        110 |          9 |          5 |        124 |
+| js                                                                           |          5 |        105 |          1 |         22 |        128 |
+| scss                                                                         |          8 |        914 |         71 |        163 |      1,148 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                     | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Other Files\Git\HTML\Clean\css\about.css                                  | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\boiler.css                                 | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\contact.css                                | CSS        |          3 |          1 |          0 |          4 |
+| c:\Other Files\Git\HTML\Clean\css\footer.css                                 | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\hero.css                                   | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\navbar.css                                 | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\projects.css                               | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\css\submit-success.css                         | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte.html                      | HTML       |        279 |          7 |          9 |        295 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\about.css           | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\boiler.css          | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\contact.css         | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\embed.html          | HTML       |         26 |          1 |          3 |         30 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\footer.css          | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\hero.css            | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\modern.svg          | XML        |         38 |          0 |          0 |         38 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\navbar.css          | CSS        |          1 |          1 |          0 |          2 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\saved_resource.html | HTML       |          1 |          1 |          1 |          3 |
+| c:\Other Files\Git\HTML\Clean\images\Lukas Schulte_files\send.svg            | XML        |         39 |          1 |          1 |         41 |
+| c:\Other Files\Git\HTML\Clean\images\arrow-down.svg                          | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\back-arrow.svg                          | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\bent-arrow.svg                          | XML        |          4 |          0 |          1 |          5 |
+| c:\Other Files\Git\HTML\Clean\images\computer.svg                            | XML        |          1 |          0 |          0 |          1 |
+| c:\Other Files\Git\HTML\Clean\images\github.svg                              | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\hamburger.svg                           | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\instagram.svg                           | XML        |          4 |          0 |          1 |          5 |
+| c:\Other Files\Git\HTML\Clean\images\itch.svg                                | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\leetcode.svg                            | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\logo_.svg                               | XML        |         18 |          0 |          1 |         19 |
+| c:\Other Files\Git\HTML\Clean\images\modern.svg                              | XML        |          1 |          0 |          0 |          1 |
+| c:\Other Files\Git\HTML\Clean\images\semi-circle.svg                         | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\send.svg                                | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\images\x.svg                                   | XML        |          3 |          0 |          1 |          4 |
+| c:\Other Files\Git\HTML\Clean\index.html                                     | HTML       |        438 |         19 |         10 |        467 |
+| c:\Other Files\Git\HTML\Clean\js\colorChanger.js                             | JavaScript |          4 |          0 |          2 |          6 |
+| c:\Other Files\Git\HTML\Clean\js\hamburger-menu.js                           | JavaScript |          9 |          0 |          1 |         10 |
+| c:\Other Files\Git\HTML\Clean\js\nav-btn-active.js                           | JavaScript |         32 |          1 |          8 |         41 |
+| c:\Other Files\Git\HTML\Clean\js\navbar-scroll.js                            | JavaScript |         20 |          0 |          3 |         23 |
+| c:\Other Files\Git\HTML\Clean\js\typewriter.js                               | JavaScript |         40 |          0 |          8 |         48 |
+| c:\Other Files\Git\HTML\Clean\scss\about.scss                                | SCSS       |        180 |          0 |         30 |        210 |
+| c:\Other Files\Git\HTML\Clean\scss\boiler.scss                               | SCSS       |         80 |         40 |         25 |        145 |
+| c:\Other Files\Git\HTML\Clean\scss\contact.scss                              | SCSS       |        180 |          0 |         36 |        216 |
+| c:\Other Files\Git\HTML\Clean\scss\footer.scss                               | SCSS       |         21 |          0 |          3 |         24 |
+| c:\Other Files\Git\HTML\Clean\scss\hero.scss                                 | SCSS       |        229 |         11 |         26 |        266 |
+| c:\Other Files\Git\HTML\Clean\scss\navbar.scss                               | SCSS       |        162 |         20 |         37 |        219 |
+| c:\Other Files\Git\HTML\Clean\scss\projects.scss                             | SCSS       |          4 |          0 |          0 |          4 |
+| c:\Other Files\Git\HTML\Clean\scss\submit-success.scss                       | SCSS       |         58 |          0 |          6 |         64 |
+| c:\Other Files\Git\HTML\Clean\submit-success.html                            | HTML       |         26 |          0 |          1 |         27 |
+| Total                                                                        |            |      1,937 |        115 |        222 |      2,274 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
